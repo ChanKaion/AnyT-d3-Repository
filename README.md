@@ -7,7 +7,7 @@
 
 - **Dynamic Graph Rendering** - a rendering method oriented to dynamic changes of graph
 
-<img alt="Dynamic Graph Rendering" src="https://github.com/ChanKaion/AnyT-d3-Repository/blob/static-files/img/Dynamic%20Graph%20Rendering.gif?raw=true" width="100%">
+<img alt="Dynamic Graph Rendering" src="https://github.com/ChanKaion/AnyT-d3-Repository/blob/static-files/img/Dynamic-Graph-Rendering.gif?raw=true" width="100%">
 
 - **Force Circular Sector** - a force model that can realize the fan layout
 

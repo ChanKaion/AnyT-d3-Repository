@@ -3,7 +3,7 @@
 ## Introduction
 该项目为 “动态图谱渲染” 项目, 通过图谱点边的动态重定向绑定机制，能够在维持原始图谱相对稳定的基础上，以一种自适应的方式对新图谱进行动态渐进式渲染。
 
-<img alt="Dynamic Graph Rendering" src="https://github.com/ChanKaion/AnyT-d3-Repository/blob/static-files/img/Dynamic%20Graph%20Rendering.gif?raw=true" width="100%">
+<img alt="Dynamic Graph Rendering" src="https://github.com/ChanKaion/AnyT-d3-Repository/blob/static-files/img/Dynamic-Graph-Rendering.gif?raw=true" width="100%">
 
 ## Project Resources
 
