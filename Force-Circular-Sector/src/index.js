@@ -4,12 +4,11 @@
  */
 const initSVGSettings = () => {
     // 定义 svg 元素
-    let width = document.documentElement.clientWidth,
-        height = document.documentElement.clientHeight;
+    let {svgWidth, svgHeight} = renderParams;
     let svgContainer = d3.select('body')
         .append('svg')
-        .attr('width', width)
-        .attr('height', height);
+        .attr('width', svgWidth)
+        .attr('height', svgHeight);
     let renderSVG = svgContainer.append('g');
 
     // 事件绑定
@@ -37,8 +36,7 @@ const initSVGSettings = () => {
  */
 const renderGraph = (renderSVG, renderParams) => {
     // 图谱参数
-    let radius = renderParams.radius, // 节点半径大小
-        nodeNum = renderParams.nodeNum; // 节点数量
+    let {radius, nodeNum} = renderParams;
     // 构造节点数据
     let nodes = [];
     for (let index = 0; index < nodeNum; index++) {
@@ -101,7 +99,14 @@ const renderGraph = (renderSVG, renderParams) => {
         });
 };
 
+
+let renderParams = {
+    radius: 3,
+    svgWidth: document.documentElement.clientWidth,
+    svgHeight: document.documentElement.clientHeight,
+    nodeNum: 200
+};
 // 初始化 SVG 画布元素
-let renderSVG = initSVGSettings();
+let renderSVG = initSVGSettings(renderParams);
 // 渲染图谱
-renderGraph(renderSVG, renderParams = {radius: 3, nodeNum: 200});
+renderGraph(renderSVG, renderParams);

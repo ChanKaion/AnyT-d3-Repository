@@ -2,14 +2,13 @@
  * 初始化 SVG 画布元素
  * @returns {*} d3 SVG画布元素对象
  */
-const initSVGSettings = () => {
+const initSVGSettings = (renderParams) => {
     // 定义 svg 元素
-    let width = document.documentElement.clientWidth,
-        height = document.documentElement.clientHeight;
+    let {svgWidth, svgHeight} = renderParams;
     let svgContainer = d3.select('body')
         .append('svg')
-        .attr('width', width)
-        .attr('height', height);
+        .attr('width', svgWidth)
+        .attr('height', svgHeight);
     let renderSVG = svgContainer.append('g');
 
     // 事件绑定
@@ -37,9 +36,7 @@ const initSVGSettings = () => {
  */
 const renderGraph = (renderSVG, renderParams) => {
     // 图谱参数
-    let radius = renderParams.radius, // 节点半径大小
-        svgWidth = renderParams.svgWidth, // 宽度
-        svgHeight = renderParams.svgHeight; // 高度
+    let {radius, svgWidth, svgHeight} = renderParams;
 
     d3.json('./dataset/case.json').then(data => {
 
@@ -72,12 +69,11 @@ const renderGraph = (renderSVG, renderParams) => {
             .data(data.nodes, d => d.guid)
             .enter()
             .append('g')
-            .attr('id', d => `nodeG-${d.guid}`);
+            .attr('id', d => `nodeG-${d.guid}`)
+            .attr('class', 'nodeG');
         nodesEL
             .append('circle')
             .attr('stroke', '#ffffff')
-            .style('stroke-opacity', 0.5)
-            .attr('stroke-width', '1px')
             .attr('r', radius)
             .style('fill', '#999999');
 
@@ -165,11 +161,11 @@ const renderGraph = (renderSVG, renderParams) => {
 };
 
 // 初始化 SVG 画布元素
-let renderSVG = initSVGSettings();
-// 渲染图谱
 let renderParams = {
     radius: 3,
     svgWidth: document.documentElement.clientWidth,
     svgHeight: document.documentElement.clientHeight
 };
+let renderSVG = initSVGSettings(renderParams);
+// 渲染图谱
 renderGraph(renderSVG, renderParams);

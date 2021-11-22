@@ -3,7 +3,7 @@
 ## Introduction
 该项目为 “多级嵌套力模拟器布局优化” 项目, 通过对 `d3-force` 中的 `simulation` 进行多级嵌套，以支持力模拟器迭代过程中的定制化布局。
 
-<img alt="Multi-level Nested Simulation" src="https://github.com/ChanKaion/AnyT-d3-Repository/blob/static-files/img/Multi-level%20Nested%20Simulation.jpg?raw=true" width="720">
+<img alt="Multi-level Nested Simulation" src="https://github.com/ChanKaion/AnyT-d3-Repository/blob/static-files/img/Multi-level%20Nested%20Simulation.jpg?raw=true" width="100%">
 
 ## Project Resources
 
@@ -37,6 +37,13 @@ let simulation = d3.forceSimulation(nodes)
 ```
 
 ## Change Log
+
+### 2021-11-23
+
+#### Changed
+
+- 更新代码书写
+- 更新案例数据集
 
 ### 2021-11-20
 
