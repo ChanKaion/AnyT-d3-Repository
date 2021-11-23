@@ -3,7 +3,7 @@
 ## Introduction
 该项目为“扇形布局约束力模型” 项目, 基于 `d3-force` 实现了扇形布局的力模型，使得 `simulation` 在迭代过程中可以对节点坐标进行约束计算，以达到扇形布局效果。
 
-<img alt="Force Circular Sector" src="https://github.com/ChanKaion/AnyT-d3-Repository/blob/static-files/img/Force%20Circular%20Sector.jpg?raw=true" width="100%">
+<img alt="Force Circular Sector" src="https://github.com/ChanKaion/AnyT-d3-Repository/blob/master/img/Force-Circular-Sector.jpg?raw=true" width="100%">
 
 ## Project Resources
 

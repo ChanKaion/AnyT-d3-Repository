@@ -1,5 +1,15 @@
 ## Change Log
 
+### 0.0.3 - 2021-11-23
+
+#### Changed
+
+- Update the images path
+
+#### Removed
+
+- Remove the branch **"static-files"** 
+
 ### 0.0.2 - 2021-11-23
 
 #### Added
@@ -8,7 +18,7 @@
 
 #### Changed
 
-- Update minor content of **"Multi-level Nested Simulation"** resource and **"Force Circular Sector"** resource
+- Update minor content of **"Force Circular Sector"** resource and **"Multi-level Nested Simulation"** resource
 
 ### 0.0.1 - 2021-11-20
 
