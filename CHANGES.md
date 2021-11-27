@@ -1,5 +1,11 @@
 ## Change Log
 
+### 0.0.4 - 2021-11-27
+
+#### Added
+
+- Initialize **"Auto Zoom"** resource
+
 ### 0.0.3 - 2021-11-23
 
 #### Changed
