@@ -16,6 +16,10 @@
 
 <img alt="Force Circular Sector" src="https://github.com/ChanKaion/AnyT-d3-Repository/blob/master/img/Force-Circular-Sector.jpg?raw=true" width="100%">
 
+- **Force Directed Graph Layout (SVG & Canvas)** - a basic force directed layout of graph implemented by SVG and Canvas
+
+<img alt="Force Directed Graph Layout (SVG & Canvas)" src="https://github.com/ChanKaion/AnyT-d3-Repository/blob/master/img/Force-Directed-Graph-Layout-(SVG&Canvas).png?raw=true" width="100%">
+
 - **Multi-level Nested Simulation** - a design of tick events in simulation that can realize the customized layout of specific graph data
  
 <img alt="Multi-level Nested Simulation" src="https://github.com/ChanKaion/AnyT-d3-Repository/blob/master/img/Multi-level-Nested-Simulation.jpg?raw=true" width="100%">

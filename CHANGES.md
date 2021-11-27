@@ -1,5 +1,11 @@
 ## Change Log
 
+### 0.0.5 - 2021-11-28
+
+#### Added 
+
+- Initialize **"Force Directed Graph Layout (SVG & Canvas)"** resource
+
 ### 0.0.4 - 2021-11-27
 
 #### Added
