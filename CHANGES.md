@@ -1,5 +1,12 @@
 ## Change Log
 
+### 0.0.6 - 2021-11-29
+
+#### Changed 
+
+- Update demo images
+- Update README.md
+
 ### 0.0.5 - 2021-11-28
 
 #### Added 
